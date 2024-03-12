@@ -1,23 +1,13 @@
+Curl GET Request for HOLIDAYS
+
+-a- (Negative Authorization Request: No API Key)
 Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
 $ curl -G -d country="BO"-d "https://holidayapi.com/v1/holidays"
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   125    0   125    0     0    288      0 --:--:-- --:--:-- --:--:--   290{"status":401,"error":"The API key parameter is required. For more information, please visit https:\/\/holidayapi.com\/docs"}
 
-
-Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
-$ curl -G -d country="BO" -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/holidays"
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100   192    0   192    0     0    226      0 --:--:-- --:--:-- --:--:--   227{"status":400,"requests":{"used":1,"available":9999,"resets":"2024-04-01 00:00:00"},"error":"The year parameter is required. For more information, please visit https:\/\/holidayapi.com\/docs"}
-
-
-Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
-$ curl -G -d country="BO" -d year="2023" -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/holidays"
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0{"status":200,"warning":"These results do not include state and province holidays. For more information, please visit https:\/\/holidayapi.com\/docs","requests":{"used":2,"available":9998,"resets":"2024-04-01 00:00:00"},"holidays":[{"name":"New Year's Day","date":"2023-01-01","observed":"2023-01-01","public":true,"country":"BO","uuid":"c194dcb7-ad84-4fd6-a8a3-231b8faf4a11","weekday":{"date":{"name":"Sunday","numeric":"7"},"observed":{"name":"Sunday","numeric":"7"}}},{"name":"Plurinational State Foundation Day","date":"2023-01-22","observed":"2023-01-22","public":true,"country":"BO","uuid":"7ecca8f6-375c-4d6b-8b0e-61ac4a8b33fe","weekday":{"date":{"name":"Sunday","numeric":"7"},"observed":{"name":"Sunday","numeric":"7"}}},{"name":"Feast of the Virgin of Candelaria","date":"2023-02-02","observed":"2023-02-02","public":false,"country":"BO","uuid":"544ed0fa-992b-482b-b889-ed428b123a80","weekday":{"date":{"name":"Thursday","numeric":"4"},"observed":{"name":"Thursday","numeric":"4"}}},{"name":"Shrove Monday","date":"2023-02-20","observed":"2023-02-20","public":true,"country":"BO","uuid":"5e7dd1df-6e93-4030-b0de-49e3993749ba","weekday":{"date":{"name":"Monday","numeric":"1"},"observed":{"name":"Monday","numeric":"1"}}},{"name":"Shrove Tuesday","date":"2023-02-21","observed":"2023-02-21","public":true,"country":"BO","uuid":"77ce21c5-b16c-42fb-8e90-81fbbc725880","weekday":{"date":{"name":"Tuesday","numeric":"2"},"observed":{"name":"Tuesday","numeric":"2"}}},{"name":"Father's Day","date":"2023-03-19","observed":"2023-03-19","public":false,"country":"BO","uuid":"025a2fe5-4a07-40c6-8f58-2411e3654aa4","weekday":{"date":{"name":"Sunday","numeric":"7"},"observed":{"name":"Sunday","numeric":"7"}}},{"name":"March Equinox","date":"2023-03-20","observed":"2023-03-20","public":false,"country":"BO","uuid":"47f696e3-aac9-4f52-a89a-5f33bb74d072","weekday":{"date":{"name":"Monday","numeric":"1"},"observed":{"name":"Monday","numeric":"1"}}},{"name":"Good Friday","date":"2023-04-07","observed":"2023-04-07","public":true,"country":"BO","uuid":"7c918aa1-98ce-4f1b-a8c9-17fb001743cc","weekday":{"date":{"name":"Friday","numeric":"5"},"observed":{"name":"Friday","numeric":"5"}}},{"name":"Labor Day","date":"2023-05-01","observed":"2023-05-01","public":true,"country":"BO","uuid":"118fcbcc-f6cc-4ff9-b2f4-8b49193a000c","weekday":{"date":{"name":"Monday","numeric":"1"},"observed":{"name":"Monday","numeric":"1"}}},{"name":"Mother's Day","date":"2023-05-27","observed":"2023-05-27","public":false,"country":"BO","uuid":"7a30fa9f-91a0-48c5-b76a-0784ae33250f","weekday":{"date":{"name":"Saturday","numeric":"6"},"observed":{"name":"Saturday","numeric":"6"}}},{"name":"Feast of Corpus Christi","date":"2023-06-08","observed":"2023-06-08","public":true,"country":"BO","uuid":"36a825d2-d6fa-4cf8-bc56-ce20259d1b39","weekday":{"date":{"name":"Thursday","numeric":"4"},"observed":{"name":"Thursday","numeric":"4"}}},{"name":"Andean New Year's Day","date":"2023-06-21","observed":"2023-06-21","public":true,"country":"BO","uuid":"ddb3cabd-5a2e-427a-a0bc-90a29e50e666","weekday":{"date":{"name":"Wednesday","numeric":"3"},"observed":{"name":"Wednesday","numeric":"3"}}},{"name":"June Solstice","date":"2023-06-21","observed":"2023-06-21","public":false,"country":"BO","uuid":"1d01f992-20f1-462b-be6d-48d288dee1c7","weekday":{"date":{"name":"Wednesday","numeric":"3"},"observed":{"name":"Wednesday","numeric":"3"}}},{"name":"Day of the Agrarian, Productive and Community Revolution","date":"2023-08-02","observed":"2023-08-02","public":false,"country":"BO","uuid":"519fdb5d-f63a-48ab-804e-01c27ebd4e0c","weekday":{"date":{"name":"Wednesday","numeric":"3"},"observed":{"name":"Wednesday","numeric":"3"}}},{"name":"National Day","date":"2023-08-06","observed":"2023-08-06","public":true,"country":"BO","uuid":"f13770f6-c43a-498e-8b8c-27c3cbd42c3c","weekday":{"date":{"name":"Sunday","numeric":"7"},"observed":{"name":"Sunday","numeric":"7"}}},{"name":"September Equinox","date":"2023-09-23","observed":"2023-09-23","public":false,"country":"BO","uuid":"e52f21d9-061f-4bd7-a412-adb359d100  5387    0  5387    0     0   6792      0 --:--:-- --:--:-- --:--:--  6818ate":{"name":"Saturday","numeric":"6"},"observed":{"name":"Saturday","numeric":"6"}}},{"name":"All Saints' Day","date":"2023-11-02","observed":"2023-11-02","public":true,"country":"BO","uuid":"d4e5b0f3-89ec-4fc5-b4fb-26eef62dd13b","weekday":{"date":{"name":"Thursday","numeric":"4"},"observed":{"name":"Thursday","numeric":"4"}}},{"name":"December Solstice","date":"2023-12-22","observed":"2023-12-22","public":false,"country":"BO","uuid":"d7ea522a-c89a-487d-a3d3-03fb022e97c2","weekday":{"date":{"name":"Friday","numeric":"5"},"observed":{"name":"Friday","numeric":"5"}}},{"name":"Christmas Eve","date":"2023-12-24","observed":"2023-12-24","public":false,"country":"BO","uuid":"c679362a-68b7-46c5-b76e-df7b03de2e1c","weekday":{"date":{"name":"Sunday","numeric":"7"},"observed":{"name":"Sunday","numeric":"7"}}},{"name":"Christmas Day","date":"2023-12-25","observed":"2023-12-25","public":true,"country":"BO","uuid":"f255e42b-24c4-4996-acf9-b8154372aa7a","weekday":{"date":{"name":"Monday","numeric":"1"},"observed":{"name":"Monday","numeric":"1"}}},{"name":"New Year's Eve","date":"2023-12-31","observed":"2023-12-31","public":false,"country":"BO","uuid":"c17266aa-b55d-4b86-afdd-c4729df6af45","weekday":{"date":{"name":"Sunday","numeric":"7"},"observed":{"name":"Sunday","numeric":"7"}}}]}
-
+-b- (Positive: Bolivian Holiday list)
 Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
 $ curl -G -d country="BO" -d year="2023" -d pretty -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/holidays"
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -412,6 +402,7 @@ $ curl -G -d country="BO" -d year="2023" -d pretty -d key="1211749f-702a-49f7-ac
     ]
 }
 
+-c- (Negative: Unexisting Country code)
 Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
 $ curl -G -d country="ZM-11" -d year="2023" -d pretty -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/holidays"
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -425,20 +416,9 @@ $ curl -G -d country="ZM-11" -d year="2023" -d pretty -d key="1211749f-702a-49f7
     },
     "error": "The requested country (ZM-11) is invalid. For more information, please visit https:\/\/holidayapi.com\/docs"
 }
-Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
-$ curl -G -d country="BO" -d start="2023-07-10" -d days="7" -d pretty -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/holidays"
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100   246    0   246    0     0    309      0 --:--:-- --:--:-- --:--:--   311{
-    "status": 400,
-    "requests": {
-        "used": 9,
-        "available": 9991,
-        "resets": "2024-04-01 00:00:00"
-    },
-    "error": "The year parameter is required. For more information, please visit https:\/\/holidayapi.com\/docs"
-}
 
+
+-d- (Negative: 402 Payment Required Code. Because User need to pay for this year Holidays)
 Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
 $ curl -G -d country="BO" -d start="2024-07-15" -d days="7" -d pretty -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/workday"
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -452,6 +432,8 @@ $ curl -G -d country="BO" -d start="2024-07-15" -d days="7" -d pretty -d key="12
     },
     "error": "Free accounts are limited to last year's historical data only. Upgrade to premium for access to all holiday data. For more information, please visit https:\/\/holidayapi.com\/docs"
 }
+
+-b- (Positive: Find the next Work Day after a number of Days)
 
 Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
 $ curl -G -d country="BO" -d start="2023-10-30" -d days="7" -d pretty -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/workday"
