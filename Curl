@@ -433,7 +433,7 @@ $ curl -G -d country="BO" -d start="2024-07-15" -d days="7" -d pretty -d key="12
     "error": "Free accounts are limited to last year's historical data only. Upgrade to premium for access to all holiday data. For more information, please visit https:\/\/holidayapi.com\/docs"
 }
 
--b- (Positive: Find the next Work Day after a number of Days)
+-e- (Positive: Find the next Work Day after a number of Days)
 
 Julia.Villegas@JVILLEGASA-NH01 MINGW64 ~
 $ curl -G -d country="BO" -d start="2023-10-30" -d days="7" -d pretty -d key="1211749f-702a-49f7-ace3-d7ce4cf84fb8" "https://holidayapi.com/v1/workday"
